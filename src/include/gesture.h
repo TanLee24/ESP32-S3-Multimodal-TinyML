@@ -7,7 +7,7 @@
 #include <Wire.h>
 #include "MPU6050.h"
 
-extern TaskHandle_t GestureTaskHandle;
+// extern TaskHandle_t GestureTaskHandle;
 
 void gesture_task(void *pvParameters);
 
