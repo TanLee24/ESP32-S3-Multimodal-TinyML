@@ -46,7 +46,7 @@
 #include "edge-impulse-sdk/classifier/inferencing_engines/engines.h"
 #include "edge-impulse-sdk/classifier/postprocessing/ei_postprocessing_common.h"
 
-const char* ei_classifier_inferencing_categories_960438_1[] = { "Circle", "Idle", "Shake", "Up_Down", "Wave" };
+const char* ei_classifier_inferencing_categories_960438_1[] = { "Idle", "Shake", "Up_Down", "Wave" };
 
 EI_CLASSIFIER_DSP_AXES_INDEX_TYPE ei_dsp_config_960438_2_axes[] = { 0, 1, 2, 3, 4, 5 };
 const uint32_t ei_dsp_config_960438_2_axes_size = 6;
@@ -150,7 +150,7 @@ const ei_impulse_t impulse_960438_1 = {
     .project_name = "Gesture_ESP32S3",
     .impulse_id = 1,
     .impulse_name = "Impulse #1",
-    .deploy_version = 2,
+    .deploy_version = 3,
 
     .nn_input_frame_size = 78,
     .raw_sample_count = 96,
@@ -181,7 +181,7 @@ const ei_impulse_t impulse_960438_1 = {
     .slices_per_model_window = 4,
 
     .has_anomaly = EI_ANOMALY_TYPE_UNKNOWN,
-    .label_count = 5,
+    .label_count = 4,
     .categories = ei_classifier_inferencing_categories_960438_1,
     .results_type = EI_CLASSIFIER_TYPE_CLASSIFICATION,
     .freeform_outputs_size = freeform_outputs_960438_1_size,
